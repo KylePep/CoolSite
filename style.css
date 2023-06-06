@@ -1,0 +1,167 @@
+/* SECTION resource links */
+
+/* I probably cant use variables like this in CSS */
+/* let (--darkest) = #061130
+let (--dark) = #1C4BC4
+let (--grey) = #7b7f89
+let (--light) = #F4F6F8
+let (--highlight) = #FAFD61 */ 
+
+/* link to logo
+https://cwcurriculum.blob.core.windows.net/fullstack/assets/img/coolsite-logo.png */
+
+/* link to background image
+https://cwcurriculum.blob.core.windows.net/fullstack/assets/img/world.png */
+
+
+/* SECTION Elements */
+body{
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+header{
+  color: #F4F6F8;
+}
+
+footer b {
+  font-size: 30px;
+}
+
+
+
+/* SECTION Classes */
+.bg-color{
+  background-color: #061130;
+}
+
+/* SECTION Header */
+.header-main-flex{
+  padding: 10px 25px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.header-sub-flex{
+  display: flex;
+  align-items: center;
+}
+
+.header-img{
+  padding: 10px;
+}
+
+.header-link {
+  padding: 10px 30px;
+}
+.chat-button{
+  background-color: #1C4BC4;
+  color: #F4F6F8;
+  border-radius: 5px;
+  padding: 6px 15px;
+}
+
+/* SECTION Main */
+.main-flex{
+  display: flex;
+  flex-direction: row;
+  justify-content: center; 
+  align-items: center;
+  padding: 2% 10%;
+}
+
+.main-title{
+  color: #FAFD61;
+  display: flex;
+  font-size: small;
+  flex-direction: column;
+  max-width: 30%;
+  max-height: 40%;
+}
+.main-bold{
+  color: #F4F6F8;
+  font-size: 30px;
+  font-weight: bold;
+  max-width: 80%;
+  margin: 5px 0;
+}
+.main-plain{
+  color: #F4F6F8;
+  font-size: medium;
+  max-width: 80%;
+  font-stretch: expanded;
+  margin: 0;
+}
+
+.main-img{
+  width: 100%;
+  height: 100%;
+  margin: 10px;
+}
+/* SECTION Footer */
+.footer-color{
+  background-color: #F4F6F8;
+}
+
+.footer-links{
+  background-color: #F4F6F8;
+  display: flex;
+  font-size: 14px;
+  padding: 20px  24vh;
+  justify-content: space-between;
+  text-decoration: underline;
+}
+.footer-link{
+  color: #1C4BC4;
+}
+.footer-statement{
+  background-color: #e6e7e9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.footer-statement-p{
+  font-size: medium;
+}
+/* SECTION clickable */
+img.header-img:hover{
+  scale: 1.2;
+}
+
+button:hover{
+  background-color: #14378e;
+  color: #bbd8f5;
+}
+p.header-link:hover {
+  color: gray;
+}
+p.footer-link:hover{
+  color: #53a1e9;
+}
+
+/* SECTION medias */
+@media (max-width: 820px){
+  .bg-color {
+    background-color: rgb(14, 38, 38);
+  }
+  .main-plain {
+    font-size: small;
+  }
+  .main-bold {
+    font-size: medium;
+  }
+  .main-title{
+    max-width: 100%;
+  }
+  .main-flex{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .footer-links{
+    padding: 20px 2vh;
+  }
+  .header-main-flex {
+    flex-direction: column;
+  }
+}
